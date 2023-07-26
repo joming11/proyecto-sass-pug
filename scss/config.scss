@@ -1,0 +1,40 @@
+//importar tipografia
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
+//fuentes
+$main-font: "Ubuntu", sans-serif;
+$light: 300;
+$normal: 400;
+
+//convertir pixeles a em´s
+@function em($el, $parent: 16px) {
+  @return ($el / $parent) * 1em;
+}
+
+$font-size: em(14px);
+$h3-size: $font-size * 1.15;
+$h2-size: $font-size * 1.35;
+$h1-size: $font-size * 1.7;
+
+$colors: (
+  azul-base: #00b1f3,
+  azul-oscuro: #03151f,
+  azul-medio: #006bab,
+  azul-claro: #29daff,
+  rojo: #ff3532,
+  rojo-claro: #ff4946,
+  gris-oscuro: #19242b,
+  gris-claro: #cdcdcd,
+  success: #00cb30,
+  blanco: #fff,
+);
+
+//funcion para obtener color
+@function color($color) {
+  @return map-get($colors, $color);
+}
+
+//funcion para obtener imagenes
+@function img($img) {
+  @return url("../img/#{$img}");
+}

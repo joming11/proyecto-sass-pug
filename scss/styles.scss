@@ -1,0 +1,27 @@
+//Importacion de componente del proyecto
+//los archivos se pueden importar sin agregar la extension scss
+//es una buena practica comenzar el nombre de los archivos con _ porque asi nos aseguramos que no sean compilados.
+
+//config
+@import "config";
+
+//estilos base
+@import "base/base";
+
+//layout
+@import "layouts/grid";
+@import "layouts/header";
+
+//modules
+@import "modules/buttons";
+@import "modules/cards";
+@import "modules/menu";
+@import "modules/tabs";
+
+//components
+@import "components/class";
+@import "components/course";
+@import "components/courses";
+@import "components/login";
+@import "components/questions";
+@import "components/user-profile";
