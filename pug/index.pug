@@ -1,1 +1,19 @@
-include templates/template
+extends templates/template
+
+append config 
+    -currentPage = "login-page"
+
+block main
+    .main.home
+        img(src="../img/logo3.jpg", alt="").logo
+        form.login-form
+            .login-form__item
+                label(for="username").login-form__label.bi.bi-person Nombre de usuario
+                input(type="text" name='username' id='username').login-form__input
+            .login-form__item
+                label(for="password").login-form__label.bi.bi-lock-fill Contraseña
+                input(type="password" name='password' id='password').login-form__input
+            input(type="submit" value="Ingresar").login-form__submit.button.cta
+        .reset-password
+            h3 ¿Olvidaste tu contraseña? Paju@ 
+                a(href="#") Recuperar 

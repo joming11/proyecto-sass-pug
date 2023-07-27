@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body class="#{currentPage}">
+    <div class="main home"><img class="logo" src="../img/logo3.jpg" alt="">
+      <form class="login-form">
+        <div class="login-form__item">
+          <label class="login-form__label bi bi-person" for="username">Nombre de usuario</label>
+          <input class="login-form__input" type="text" name="username" id="username">
+        </div>
+        <div class="login-form__item">
+          <label class="login-form__label bi bi-lock-fill" for="password">Contraseña</label>
+          <input class="login-form__input" type="password" name="password" id="password">
+        </div>
+        <input class="login-form__submit button cta" type="submit" value="Ingresar">
+      </form>
+      <div class="reset-password">
+        <h3>¿Olvidaste tu contraseña? Paju@ <a href="#">Recuperar </a></h3>
+      </div>
+    </div>
+  </body>
+</html>
