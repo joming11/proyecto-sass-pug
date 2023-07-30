@@ -342,6 +342,27 @@ h3 {
   font-weight: 300;
 }
 
+img {
+  max-width: 100%;
+}
+
+.main-header {
+  background: #006bab;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1em;
+  height: 3.125rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .button {
   display: inline-block;
   line-height: 2.5;
@@ -367,6 +388,55 @@ h3 {
 .bi,
 .bi-lock-fill::before {
   margin-right: 0.5em;
+}
+
+.course-card {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  margin-top: 5em;
+  position: relative;
+}
+.course-card__footer {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 2.5em;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em;
+}
+.course-card__progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.course-card__progress__bar {
+  border: 1px solid #fff;
+  width: 4.0625rem;
+  height: 1rem;
+  margin-right: 1em;
+  background: linear-gradient(120deg, #00cb30 70%, transparent 30%);
+}
+
+.bi-star-fill {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  text-decoration: none;
+  color: gold;
 }
 
 .logo {

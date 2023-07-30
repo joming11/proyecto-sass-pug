@@ -6,9 +6,17 @@ $main-font: "Ubuntu", sans-serif;
 $light: 300;
 $normal: 400;
 
+//gutter
+$gutter: 1em;
+
 //convertir pixeles a em´s
 @function em($el, $parent: 16px) {
   @return ($el / $parent) * 1em;
+}
+
+//convertir px a rem
+@function rem($el) {
+  @return ($el / 16px) * 1rem;
 }
 
 $font-size: em(14px);
