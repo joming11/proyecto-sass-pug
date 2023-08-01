@@ -374,6 +374,23 @@ img {
   color: #fff;
 }
 
+.main-menu {
+  list-style: none;
+  margin: 2em 0 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.main-menu__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  line-height: 2.5;
+  border-bottom: 1px solid #fff;
+}
+
 [class^=bi-]::before {
   position: relative;
   top: 2px;
@@ -387,6 +404,26 @@ img {
 
 .bi,
 .bi-lock-fill::before {
+  margin-right: 0.5em;
+}
+
+.bi,
+.bi-journal-code::before {
+  margin-right: 0.5em;
+}
+
+.bi,
+.bi-chat-quote::before {
+  margin-right: 0.5em;
+}
+
+.bi,
+.bi-people-fill::before {
+  margin-right: 0.5em;
+}
+
+.bi,
+.bi-person-fill::before {
   margin-right: 0.5em;
 }
 
@@ -491,4 +528,39 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background: url("../img/bg-home.jpg") center/cover;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 90;
+  background: #03151f url("../img/logo3.jpg") no-repeat left bottom/150px;
+  height: 100%;
+}
+.main-nav__header {
+  background-color: #006bab;
+  color: #fff;
+  padding: 2em 1em;
+}
+.main-nav__img {
+  border-radius: 50%;
+  width: 8.25em;
+  height: 8.25em;
+  margin-right: 1em;
+}
+.main-nav__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-nav__name {
+  font-size: 2em;
+  line-height: 1;
+  margin-top: 1em;
+}
+.main-nav__bio {
+  font-size: 1em;
+  line-height: 2;
 }

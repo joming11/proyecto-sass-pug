@@ -1,0 +1,35 @@
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 90;
+  background: color(azul-oscuro) img("logo3.jpg") no-repeat left bottom / 150px;
+  height: 100%;
+
+  &__header {
+    background-color: color(azul-medio);
+    color: color(blanco);
+    padding: ($gutter * 2) $gutter;
+  }
+
+  &__img {
+    border-radius: 50%;
+    width: em(132px);
+    height: em(132px);
+    margin-right: 1em;
+  }
+  &__user {
+    display: flex;
+    // align-items: center;
+  }
+  &__name {
+    font-size: 2em;
+    line-height: 1;
+    margin-top: 1em;
+  }
+  &__bio {
+    font-size: 1em;
+    line-height: 2;
+  }
+}
