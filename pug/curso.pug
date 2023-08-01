@@ -1,0 +1,16 @@
+extends templates/template 
+
+append config 
+    -current = "course-page"
+    -title = "Sass desde cero"
+
+block header 
+    include blocks/header
+
+block main
+    header.course-header
+        img(src="../img/sass-course.jpg", alt="").course-header__img
+        .course-header__teacher 
+            .course-header__teacher__img
+            .course-header__teacher__data
+    .content

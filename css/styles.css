@@ -427,6 +427,10 @@ img {
   margin-right: 0.5em;
 }
 
+.course-header__img {
+  margin-top: 3.5em;
+}
+
 .course-card {
   margin-left: 1em;
   margin-right: 1em;
