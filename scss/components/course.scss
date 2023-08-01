@@ -1,5 +1,61 @@
 .course-header {
+  position: relative;
+  margin-bottom: 3em;
+  &::before {
+    content: "";
+    width: 100%;
+    height: rem(40px);
+    background: rgba($color: #000000, $alpha: 0.5);
+    display: block;
+    position: absolute;
+    bottom: 62px;
+  }
   &__img {
     margin-top: 3.5em;
+  }
+
+  &__teacher {
+    position: relative;
+    padding: 0 $gutter;
+    margin-top: -56px;
+    height: rem(112px);
+    display: flex;
+    z-index: 10;
+    &__img {
+      width: rem(112px);
+      //   margin-top: -56px;
+    }
+    &__data {
+      display: flex;
+      flex-direction: column;
+      padding-left: $gutter;
+      justify-content: space-between;
+    }
+    &__ask {
+      margin-top: auto;
+      display: table;
+    }
+    &__name {
+      font-size: 1.5em;
+      color: color(blanco);
+      margin-top: 0.6em;
+      small {
+        display: inline-block;
+        font-size: 0.6em;
+        margin-left: $gutter;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.content {
+  padding: 0 $gutter;
+}
+
+.course-content {
+  &__item {
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid color(gris-claro);
   }
 }
